@@ -13,12 +13,14 @@ body {
 
 header {
     background-color: green;
-    height: 100px;
+    height: 80px;
+    padding: 10px 10px 10px 10px;
     color: white;
 }
 
 img#logoWeb {
-    max-width: 100px;
+
+    max-width: 80px;
     float: left;
 }
 
