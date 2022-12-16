@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilProjecte.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduprojekts.com</title>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <img id="logoWeb" src="arduino-1-logo-png-transparent.png" alt="">
+            <h1>Arduprojekts</h1>
+
+        </header>
+        <div>
+            <ul id="capcalera">
+                <li class="capcalera"><a class="capcalera" href="index.html">Inici</a></li>
+                <li class="capcalera"><a class="capcalera" href="pagina_projectes.html">Projectes</a></li>
+                <li class="capcalera"><a class="capcalera" href="pagina_hardware.html">Hardware</a></li>
+                <li class="capcalera"><a class="capcalera" href="pagina_nosaltres.html">Sobre nos.</a></li>
+            </ul>
+        </div>
+        <section>
+            <h2 id="principal">Com fer un theremin</h2>
+            <h3>Material necessari</h3>
+            <ul id="elements">
+                <li class="elems">Microcontrolador Arduino</li>
+                <li class="elems">protoboard(opcional)</li>
+                <li class="elems">cables</li>
+                <li class="elems">altaveu</li>
+                <li class="elems">sensor de lluminositat o potenciometre</li>
+                <li class="elems">resistència de 330 Ohms</li>
+            </ul>
+            <p>En la següent imatge es mostra com s'han de connectar els diferents elements entre si:</p>
+            <img id="imgEsquema" src="IMG_20221101_210225.jpg" alt="">
+            <p id="boto-codi">Copiar codi</p>
+            <p>El codi que es necessita per a fer-ho funcionar es mostra a continuació</p>
+            <p id="codi">
+                const int LDR = A1;<br />
+                const int altaveu = 5;<br />
+                int frequencia = 0;<br />
+                int frequenciaAntiga = 0;<br />
+                int altaveuEnces = 0;<br />
+                int serie;<br />
+                <br />
+                void setup() {<br />
+                pinMode(altaveu, OUTPUT);<br />
+                Serial.begin(9600);<br />
+                }<br />
+                <br />
+                void loop() {<br />
+                if (Serial.available() > 0) {<br />
+                serie = Serial.read();<br />
+                if (serie == 'S' || serie == 's') {<br />
+                altaveuEnces = 1;<br />
+                } else if (serie == 'N' || serie == 'n') {<br />
+                altaveuEnces = 0;<br />
+                noTone(altaveu);<br />
+                }<br />
+                }<br />
+                if (altaveuEnces == 1) {<br />
+                frequencia = analogRead(LDR) + 262;<br />
+                Serial.println(frequencia);<br />
+                delay(10);<br />
+                if (frequencia != frequenciaAntiga) {<br />
+                tone(5, frequencia);<br />
+                frequenciaAntiga = frequencia;<br />
+                }<br />
+                }<br />
+                }
+            </p><br />
+        </section>
+        <aside id="entrada-baix">
+            <h3>Hardware elements</h3>
+            <a href="hardware1.html" class="lateral">
+                <article class="aside">
+                    <h4>Sensor d'ultrasons</h4>
+                    <img src="ultrasons.jpg" alt="">
+                </article>
+            </a>
+            <a href="Pag_No_Disp.html" class="lateral">
+                <article class="aside">
+                    <h4>Sensor d'ultrasons</h4>
+                    <img src="resistencia.jpg" alt="">
+                </article>
+            </a>
+            <a href="Pag_No_Disp.html" class="lateral">
+                <article class="aside">
+                    <h4>Sensor d'ultrasons</h4>
+                    <img src="arduino.jpg" alt="">
+                </article>
+            </a>
+            <a href="Pag_No_Disp.html" class="lateral">
+                <article class="aside">
+                    <h4>Sensor d'ultrasons</h4>
+                    <img src="protoboard.jpg" alt="">
+                </article>
+            </a>
+        </aside>
+        <footer>
+            <p class="footer">Aquesta pagina web ha estat creada per Pau Tort</p>
+        </footer>
+    </body>
+
+</html>

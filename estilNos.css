@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 5px 5px 5px 5px;
+    max-width: 1300px;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    background-color: green;
+    height: 80px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+img#logoWeb {
+
+    max-width: 80px;
+    float: left;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+ul#capcalera {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+li.capcalera {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    list-style: none;
+    border-radius: 10px;
+
+    display: inline;
+    transition: all linear 500ms;
+}
+
+li.capcalera:hover {
+    background-color: green;
+}
+
+a.capcalera {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    max-width: 1000px;
+}
+
+@keyframes projecte {
+    0% {
+        transform: scale(20%);
+        opacity: 0%
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 100%
+    }
+
+}
+
+section {
+    animation-name: projecte;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+h2 {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+p {
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
+ul#llocsWeb {
+    background-color: green;
+}
+
+a.enllaç-ref {
+    margin: 10px 10px 10px 10px;
+    color: white;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+a.enllaç-ref:hover {
+    color: grey;
+}
+
+a.no-disp {
+    text-decoration: none;
+    color: white;
+}
+
+p.botoTornar {
+    background-color: lightgreen;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    transition: 500ms;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.botoTornar:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+
+p.footer {
+    font-weight: bold;
+    color: white;
+}

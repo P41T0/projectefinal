@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 5px 5px 5px 5px;
+    max-width: 1300px;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    background-color: green;
+    height: 80px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+img#logoWeb {
+
+    max-width: 80px;
+    float: left;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+ul#capcalera {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+li.capcalera {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    list-style: none;
+    border-radius: 10px;
+
+    display: inline;
+    transition: all linear 500ms;
+}
+
+li.capcalera:hover {
+    background-color: green;
+}
+
+a.capcalera {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+
+@keyframes projecte {
+    0% {
+        transform: scale(20%);
+        opacity: 0%
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 100%
+    }
+
+}
+
+@keyframes baix {
+    0% {
+        transform: translateY(500px);
+        scale: 50%;
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateY(0px);
+        scale: 100%;
+    }
+}
+
+@keyframes articles-costat {
+    0% {
+        transform: scale(20%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 100%;
+    }
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+
+}
+
+p {
+    color: white;
+}
+
+section {
+    animation-name: projecte;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+aside#entrada-baix {
+    animation-name: baix;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+article.aside {
+    animation-name: articles-costat;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+h2#principal {
+    color: white;
+}
+
+h3 {
+    color: white;
+    text-align: justify;
+}
+
+ul#elements {
+    list-style-position: inside;
+    color: white;
+    text-align: justify;
+    margin: 10px 10px 10px 10px;
+}
+
+img#imgEsquema {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    transition: 2s;
+
+}
+
+img#imgEsquema:hover {
+    max-width: 500px;
+}
+
+p#boto-codi {
+    background-color: lightgreen;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 500ms;
+}
+
+p#boto-codi:hover {
+    background-color: darkgreen;
+}
+
+p {
+    text-align: justify;
+}
+
+p#codi {
+    background-color: black;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 10px 10px;
+    font-size: 0%;
+    max-width: 800px;
+    text-align: justify;
+    height: auto;
+    transition: linear 2s;
+}
+
+@keyframes codi {
+    0% {
+        max-width: 300px;
+        max-height: 50px;
+        color: black;
+        font-size: 0%;
+    }
+
+    70% {
+        max-width: 800px;
+        height: auto;
+    }
+
+    100% {
+        color: white;
+        font-size: 100%;
+    }
+}
+
+p#codi:hover {
+    font-size: 100%;
+    height: auto;
+    color: white;
+}
+
+aside {
+    text-align: center;
+    color: white;
+    background-color: lightgreen;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+article.aside {
+    display: inline-block;
+    background-color: darkgreen;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+    transition: 500ms;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.aside:hover {
+    background-color: black;
+}
+
+.aside img {
+    max-width: 300px;
+}
+
+a.lateral {
+    text-decoration: none;
+    color: white;
+    margin: 5px 5px 5px 5px;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+
+p.footer {
+    font-weight: bold;
+    color: white;
+}
